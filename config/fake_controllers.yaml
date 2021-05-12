@@ -1,0 +1,7 @@
+controller_list:
+  - name: fake_kneeling_controller
+    joints:
+      - kneeling_joint
+initial:  # Define initial robot poses.
+  - group: kneeling
+    pose: Home
