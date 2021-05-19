@@ -1,7 +1,11 @@
 controller_list:
-  - name: fake_kneeling_controller
+  - name: fake_right_arm_group_controller
     joints:
       - kneeling_joint
+      - bowing_joint
+      - right_shoulder_to_body
+      - right_upper_arm_to_right_shoulder
+      - right_elbow_joint
 initial:  # Define initial robot poses.
-  - group: kneeling
+  - group: right_arm_group
     pose: Home
