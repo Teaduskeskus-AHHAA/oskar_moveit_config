@@ -26,4 +26,13 @@ joint_state_controller:
   type: joint_state_controller/JointStateController
   publish_rate: 50
 controller_list:
-  []
+    - name: oskar3_left_hand_controller
+      action_ns: follow_joint_trajectory
+      default: True
+      type: FollowJointTrajectory
+      joints:
+        - left_shoulder_to_body
+        - left_upper_arm_to_left_shoulder
+        - left_elbow_joint
+        - bowing_joint
+        - kneeling_joint
